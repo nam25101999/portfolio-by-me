@@ -118,7 +118,17 @@
     "zalo": "Zalo",
     "github": "GitHub",
     "linkedin": "LinkedIn",
-    "rights": "Bản quyền thuộc về. Được thiết kế và lập trình bằng niềm đam mê."
+    "rights": "Bản quyền thuộc về. Được thiết kế và lập trình bằng niềm đam mê.",
+    "form_title": "Gửi Tin Nhắn",
+    "form_subtitle": "Hãy cho tôi biết về dự án hoặc ý tưởng của bạn.",
+    "form_name": "Họ và Tên",
+    "form_email": "Địa chỉ Email",
+    "form_message": "Nội dung tin nhắn",
+    "form_send": "Gửi Ngay",
+    "form_sending": "Đang gửi...",
+    "form_success": "Cảm ơn! Tin nhắn đã được gửi thành công.",
+    "form_error": "Có lỗi xảy ra. Vui lòng thử lại sau.",
+    "form_close": "Đóng"
   },
   "Trust": {
     "experience": "2+ Năm Kinh Nghiệm",

@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl";
 import { LocaleSwitcher } from "./locale-switcher";
 import { ThemeToggle } from "../theme-toggle";
 
-export const Navbar = () => {
+export const Navbar = ({ onContactClick }: { onContactClick?: () => void }) => {
   const [isOpen, setIsOpen] = useState(false);
   const t = useTranslations("Navbar");
 
@@ -55,7 +55,7 @@ export const Navbar = () => {
               <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-primary transition-all duration-300 group-hover:w-full" />
             </motion.a>
           ))}
-          <MagneticButton className="px-5 py-2 glass rounded-xl text-sm font-bold text-foreground hover:neon-glow transition-all">
+          <MagneticButton className="px-5 py-2 glass rounded-xl text-sm font-bold text-foreground hover:neon-glow transition-all" onClick={onContactClick}>
             {t("hireMe")}
           </MagneticButton>
         </div>
@@ -87,7 +87,7 @@ export const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <MagneticButton className="px-5 py-3 glass rounded-xl text-center font-bold text-foreground mt-2">
+          <MagneticButton className="px-5 py-3 glass rounded-xl text-center font-bold text-foreground mt-2" onClick={() => { setIsOpen(false); onContactClick?.(); }}>
             {t("hireMe")}
           </MagneticButton>
         </motion.div>

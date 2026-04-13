@@ -118,7 +118,17 @@
     "zalo": "Zalo",
     "github": "GitHub",
     "linkedin": "LinkedIn",
-    "rights": "All rights reserved. Designed and coded with passion."
+    "rights": "All rights reserved. Designed and coded with passion.",
+    "form_title": "Send a Message",
+    "form_subtitle": "Let me know about your project or ideas.",
+    "form_name": "Full Name",
+    "form_email": "Email Address",
+    "form_message": "Your Message",
+    "form_send": "Send Now",
+    "form_sending": "Sending...",
+    "form_success": "Thank you! Your message has been sent successfully.",
+    "form_error": "Something went wrong. Please try again later.",
+    "form_close": "Close"
   },
   "Trust": {
     "experience": "Intern @ EAGODI",

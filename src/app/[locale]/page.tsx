@@ -1,9 +1,13 @@
+"use client";
+
+import { useState } from "react";
 import dynamic from "next/dynamic";
 import { Navbar } from "@/components/ui/navbar";
 import { BackgroundBlobs } from "@/components/ui/background-blobs";
 import { CustomCursor } from "@/components/ui/custom-cursor";
 import { Hero } from "@/components/sections/hero";
 import { StatsBar } from "@/components/ui/stats-bar";
+import { ContactModal } from "@/components/ui/contact-modal";
 
 // Dynamic imports for improved performance
 const AboutSection = dynamic(() => import("@/components/sections/sections").then(mod => mod.AboutSection));
@@ -14,11 +18,13 @@ const ProjectsSection = dynamic(() => import("@/components/sections/sections").t
 const ContactSection = dynamic(() => import("@/components/sections/sections").then(mod => mod.ContactSection));
 
 export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <main className="relative min-h-screen bg-dark">
       <CustomCursor />
       <BackgroundBlobs />
-      <Navbar />
+      <Navbar onContactClick={() => setIsModalOpen(true)} />
       
       <div className="relative z-10 pt-10">
         <Hero />
@@ -33,9 +39,11 @@ export default function Home() {
           <WhatImBuilding />
           <ExperienceSection />
           <ProjectsSection />
-          <ContactSection />
+          <ContactSection onContactClick={() => setIsModalOpen(true)} />
         </div>
       </div>
+
+      <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </main>
   );
 }

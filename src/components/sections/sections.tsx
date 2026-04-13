@@ -361,22 +361,20 @@ export const WhatImBuilding = () => {
   );
 };
 
-export const ContactSection = () => {
+export const ContactSection = ({ onContactClick }: { onContactClick?: () => void }) => {
   const t = useTranslations("Contact");
+  const tCV = useTranslations("CV");
   const tTrust = useTranslations("Trust");
-  
+
   const trustSignals = [
-    { icon: Briefcase, label: tTrust("experience"), color: "text-primary" },
-    { icon: Rocket, label: tTrust("projects"), color: "text-secondary" },
-    { icon: Zap, label: tTrust("fast"), color: "text-accent" },
+    { icon: Briefcase, label: tTrust("experience"), color: "text-blue-400" },
+    { icon: Rocket, label: tTrust("projects"), color: "text-purple-400" },
+    { icon: Zap, label: tTrust("fast"), color: "text-yellow-400" },
   ];
 
   return (
-    <SectionLayout id="contact">
-      <div className="glass-morphism p-12 rounded-[3.5rem] relative overflow-hidden text-center space-y-12">
-        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-secondary to-accent" />
-        
-        {/* Header */}
+    <SectionLayout id="contact" className="py-24 text-center">
+      <div className="max-w-4xl mx-auto">
         <RevealItem>
           <h2 className="text-4xl md:text-7xl font-outfit font-black text-foreground mb-6">
             {t("title")} <span className="text-gradient drop-shadow-[0_0_15px_rgba(59,130,246,0.3)]">{t("titleAccent")}</span>
@@ -393,7 +391,7 @@ export const ContactSection = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500" />
               <button 
                 className="relative px-12 py-5 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-2xl font-black text-xl shadow-[0_10px_20px_rgba(139,92,246,0.2)] hover:shadow-[0_15px_30px_rgba(139,92,246,0.4)] transition-all duration-300 transform hover:scale-[1.03] active:scale-[0.98] flex items-center gap-3"
-                onClick={() => window.location.href = `mailto:${personalInfo.email}`}
+                onClick={onContactClick}
               >
                 <Mail className="w-6 h-6 group-hover:animate-bounce" />
                 {t("cta")}
