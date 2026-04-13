@@ -116,6 +116,7 @@ export default function CVPage() {
                   { icon: Mail, label: (personalInfo as any).email, href: `mailto:${(personalInfo as any).email}` },
                   { icon: Phone, label: (personalInfo as any).phone, href: `tel:${(personalInfo as any).phone}` },
                   { icon: MessageSquare, label: `Zalo: ${(personalInfo as any).zalo}`, href: `https://zalo.me/${(personalInfo as any).zalo}` },
+                  { icon: Globe, label: "portfolio-by-me.vercel", href: (personalInfo as any).website },
                   { icon: Github, label: "nam25101999", href: personalInfo.github },
                   { icon: Linkedin, label: "Hoai Nam Nguyen", href: personalInfo.linkedin },
                 ].map((item, i) => (

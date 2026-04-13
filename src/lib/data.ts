@@ -7,6 +7,7 @@ export const personalInfo = {
   zalo: "0869371612",
   github: "https://github.com/nam25101999",
   linkedin: "https://www.linkedin.com/in/nam-nguy%E1%BB%85n-194529366/",
+  website: "https://portfolio-by-me-pi.vercel.app/",
   cvUrl: "/cv.pdf",
 };
 
