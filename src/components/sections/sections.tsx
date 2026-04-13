@@ -11,7 +11,7 @@ import { GithubIcon, LinkedInIcon } from "../ui/icons";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useTranslations } from "next-intl";
 
-import { Layers, Cpu, Database as DBIcon, Settings, Terminal, Brain, Cloud, Rocket, Briefcase, Zap, CheckCircle2 } from "lucide-react";
+import { Layers, Cpu, Database as DBIcon, Settings, Terminal, Brain, Cloud, Rocket, Briefcase, Zap, CheckCircle2, Phone, MessageSquare } from "lucide-react";
 import { AchievementBadge } from "../ui/achievement-badge";
 import { achievements } from "@/lib/data";
 
@@ -418,6 +418,8 @@ export const ContactSection = () => {
         {/* Secondary Links */}
         <RevealItem className="flex flex-wrap justify-center gap-4">
           {[
+            { icon: Phone, label: t("phone"), href: `tel:${personalInfo.phone}` },
+            { icon: MessageSquare, label: t("zalo"), href: `https://zalo.me/${personalInfo.zalo}` },
             { icon: GithubIcon, label: t("github"), href: personalInfo.github },
             { icon: LinkedInIcon, label: t("linkedin"), href: personalInfo.linkedin },
           ].map(link => (
