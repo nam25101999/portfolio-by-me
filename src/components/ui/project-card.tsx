@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { ExternalLink, Terminal, Share2, Activity } from "lucide-react";
+import { ExternalLink, Terminal, Share2, Activity, CheckCircle2 } from "lucide-react";
 import { GithubIcon } from "./icons";
 import Image from "next/image";
 

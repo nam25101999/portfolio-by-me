@@ -101,10 +101,10 @@ export const SkillRadar = ({ category, skills, icon: Icon, color, index }: Skill
         </div>
 
         {/* Chart Container */}
-        <div className="w-full h-[180px] relative px-2" style={{ minWidth: 0 }}>
-          <ResponsiveContainer width="100%" height="100%" minWidth={0}>
-            <RadarChart cx="50%" cy="50%" outerRadius="75%" data={skills}>
-              <PolarGrid stroke="var(--border)" opacity={0.5} />
+        <div className="w-full h-[180px] flex items-center justify-center relative" style={{ minWidth: 0, minHeight: 0 }}>
+          <ResponsiveContainer width="99%" height="99%" debounce={1}>
+            <RadarChart cx="50%" cy="50%" outerRadius="70%" data={skills}>
+              <PolarGrid stroke="var(--border)" opacity={0.3} />
               <PolarAngleAxis 
                 dataKey="name" 
                 tick={{ fill: "var(--muted)", fontSize: 8, fontWeight: 700 }} 

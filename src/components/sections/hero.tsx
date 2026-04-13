@@ -105,7 +105,7 @@ export const Hero = ({ onContactClick }: { onContactClick?: () => void }) => {
           className="flex flex-col sm:flex-row gap-4 pt-8 justify-center items-center"
         >
           <MagneticButton className="relative group w-full sm:w-auto">
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500" />
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500 pointer-events-none" />
             <button 
               onClick={onContactClick}
               className="relative w-full px-10 py-4 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-black rounded-2xl shadow-xl hover:shadow-primary/40 transition-all duration-300 flex items-center justify-center gap-2"

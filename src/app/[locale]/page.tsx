@@ -27,7 +27,7 @@ export default function Home() {
       <BackgroundBlobs />
       <Navbar onContactClick={() => setIsModalOpen(true)} />
       
-      <div className="relative z-10 pt-10">
+      <div className="relative z-20 pt-10">
         <Hero onContactClick={() => setIsModalOpen(true)} />
         
         <div className="max-w-7xl mx-auto px-6">

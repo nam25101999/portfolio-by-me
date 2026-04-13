@@ -77,39 +77,45 @@ export const NeuralNetworkBackground = () => {
         if (p.y < -100) p.y = canvas.height + 100;
         if (p.y > canvas.height + 100) p.y = -100;
 
-        // Parallax offset
-        const parallaxX = (mouse.x - canvas.width / 2) * (p.z * 0.05);
-        const parallaxY = (mouse.y - canvas.height / 2) * (p.z * 0.05);
-        
-        const finalX = p.x + parallaxX;
-        const finalY = p.y + parallaxY;
-
-        // Mouse avoidance (repulsion)
-        const dxMouse = mouse.x - finalX;
-        const dyMouse = mouse.y - finalY;
+        // Local Mouse Interaction (Stronger reaction only near mouse)
+        const dxMouse = mouse.x - p.x;
+        const dyMouse = mouse.y - p.y;
         const distMouse = Math.sqrt(dxMouse * dxMouse + dyMouse * dyMouse);
         
-        let avoidX = 0;
-        let avoidY = 0;
+        let shiftX = 0;
+        let shiftY = 0;
+        
         if (distMouse < mouseRadius) {
           const force = (mouseRadius - distMouse) / mouseRadius;
-          avoidX = dxMouse * 0.05 * force;
-          avoidY = dyMouse * 0.05 * force;
+          // Pushes particles away strongly when close, scaled by depth (Z)
+          shiftX = (dxMouse / distMouse) * force * 60 * p.z; 
+          shiftY = (dyMouse / distMouse) * force * 60 * p.z;
         }
 
-        const renderX = finalX - avoidX;
-        const renderY = finalY - avoidY;
+        const renderX = p.x - shiftX;
+        const renderY = p.y - shiftY;
 
         // Draw connections
-        const connectionDistance = 150 * p.z; // Connections reach further for closer points
+        const connectionDistance = 150 * p.z; 
         for (let j = i + 1; j < points.length; j++) {
           const p2 = points[j];
-          // Use similar parallax for neighbors
-          const p2FinalX = p2.x + (mouse.x - canvas.width / 2) * (p2.z * 0.05);
-          const p2FinalY = p2.y + (mouse.y - canvas.height / 2) * (p2.z * 0.05);
           
-          const dx = renderX - p2FinalX;
-          const dy = renderY - p2FinalY;
+          // Calculate p2's rendered position for connection
+          const dxM2 = mouse.x - p2.x;
+          const dyM2 = mouse.y - p2.y;
+          const distM2 = Math.sqrt(dxM2 * dxM2 + dyM2 * dyM2);
+          let shiftX2 = 0;
+          let shiftY2 = 0;
+          if (distM2 < mouseRadius) {
+             const force2 = (mouseRadius - distM2) / mouseRadius;
+             shiftX2 = (dxM2 / distM2) * force2 * 60 * p2.z;
+             shiftY2 = (dyM2 / distM2) * force2 * 60 * p2.z;
+          }
+          const p2RenderX = p2.x - shiftX2;
+          const p2RenderY = p2.y - shiftY2;
+          
+          const dx = renderX - p2RenderX;
+          const dy = renderY - p2RenderY;
           const dist = Math.sqrt(dx * dx + dy * dy);
 
           if (dist < connectionDistance) {
@@ -122,7 +128,7 @@ export const NeuralNetworkBackground = () => {
             ctx.strokeStyle = `rgba(${color}, ${opacity})`;
             ctx.lineWidth = 0.5 + (avgZ * 1.5); // Thicker lines for closer layers
             ctx.moveTo(renderX, renderY);
-            ctx.lineTo(p2FinalX, p2FinalY);
+            ctx.lineTo(p2RenderX, p2RenderY);
             ctx.stroke();
           }
         }
