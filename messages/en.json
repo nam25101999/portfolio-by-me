@@ -1,0 +1,127 @@
+{
+  "Metadata": {
+    "title": "Nguyen Ba Hoai Nam | Fullstack AI Developer",
+    "description": "Professional portfolio of Nguyen Ba Hoai Nam, a Fullstack Developer specializing in AI-powered applications."
+  },
+  "Navbar": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact",
+    "hireMe": "HIRE ME"
+  },
+  "Hero": {
+    "subtitle": "Building AI-powered applications",
+    "greeting": "I'm",
+    "role": "Fullstack AI Developer",
+    "bio": "Software Engineering Student (Dong A University) with a product-driven development mindset. Specializing in high-performance Web applications and AI integration (LLMs) to optimize user experience. Experienced in developing real-world educational management systems at EAGODI, committed to delivering technical value and intelligent solutions.",
+    "viewProjects": "View Projects",
+    "downloadCv": "Download CV"
+  },
+  "About": {
+    "title": "Autonomous",
+    "titleAccent": "Cognition",
+    "description": "I specialize in bridging the gap between sophisticated AI models and intuitive web ecosystems.",
+    "p1": "My journey as a developer is fueled by a relentless curiosity about how artificial intelligence can transform human potential. I don't just build websites; I craft intelligent environments that learn and adapt.",
+    "p2": "Currently, I'm deep-diving into the architectural nuances of Large Language Models (LLMs) and their integration within modern React frameworks. My goal is to create platforms like TOEIC AI—where technology becomes a seamless partner in a user's progress."
+  },
+  "Stats": {
+    "projects": "Projects Completed",
+    "technologies": "Technologies Mastered",
+    "learning": "TOEIC AI Learning"
+  },
+  "Skills": {
+    "title": "Technical",
+    "titleAccent": "Arsenal",
+    "description": "A specialized breakdown of my expertise across the full stack and AI integration.",
+    "languages": "Languages",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "mobile": "Mobile",
+    "database": "Database",
+    "devops": "DevOps / Tools",
+    "tools": "Tools & AI",
+    "ai": "AI / Others"
+  },
+  "CV": {
+    "title": "Curriculum Vitae",
+    "print": "Export PDF",
+    "back": "Back to Portfolio",
+    "summary": "Professional Summary",
+    "contact": "Contact Information",
+    "skills": "Technical Skills",
+    "experience": "Professional Experience",
+    "education": "Education",
+    "projects": "Selected Projects"
+  },
+  "Education": {
+    "items": [
+      {
+        "school": "Dong A University",
+        "degree": "Software Engineering Major (Level 3/4)",
+        "description": "Focusing on Software Architecture and Artificial Intelligence. Maintaining a high GPA in major courses, actively participating in Open Source projects and AI workshops."
+      }
+    ]
+  },
+  "Experience": {
+    "title": "Professional",
+    "titleAccent": "Journey",
+    "description": "Milestones and roles that shaped my developer identity.",
+    "items": [
+      {
+        "role": "Fullstack Developer (Intern)",
+        "company": "CÔNG TY CỔ PHẦN EAGODI",
+        "description": "Optimized educational web application performance by refactoring Frontend logic with React.js/TypeScript, achieving a 20% reduction in UI response time. Implemented secure JWT authentication and RESTful APIs with Spring Boot to serve testing and management applications. Collaborated on designing flexible Database Schemas (MongoDB/MySQL) to support dynamic testing features."
+      },
+      {
+        "role": "Freelance Tutor (Math & English)",
+        "company": "Freelance",
+        "description": "Provided academic support and mentoring for secondary school students (Grades 6-9). Developed strong communication skills by simplifying complex concepts and enhanced time management and mentoring abilities."
+      }
+    ]
+  },
+  "Projects": {
+    "title": "Featured",
+    "titleAccent": "Creations",
+    "description": "A showcase of AI-integrated platforms and high-end web applications.",
+    "items": [
+      {
+        "title": "Educational Management System (EduProject)",
+        "description": "A comprehensive school management platform built with Spring Boot and React, supporting course and student management."
+      },
+      {
+        "title": "Professional Personal Portfolio",
+        "description": "A modern portfolio website using Next.js, Three.js, and Framer Motion, showcasing high-end design thinking and programming skills."
+      }
+    ]
+  },
+  "WhatImBuilding": {
+    "active": "Currently Active",
+    "title": "What I'm",
+    "titleAccent": "Building",
+    "description": "Focusing my energy on the TOEIC AI Platform. An ecosystem that leverages Large Language Models to provide real-time translation, grammar explanations, and personalized learning roadmaps for Vietnamese students.",
+    "progress": "Active Learning Progress",
+    "highlightTitle": "Project Highlights",
+    "highlight1": "AI Question Generation",
+    "highlight2": "Real-time explainations using GPT-4",
+    "highlight3": "Dynamic Learning Roadmap",
+    "highlight4": "Voice recognition for speaking practice"
+  },
+  "Contact": {
+    "title": "Let's Build",
+    "titleAccent": "Together",
+    "description": "I build fast, beautiful, and high-performance web products. Currently open for freelance or full-time opportunities.",
+    "cta": "Hire Me / Let's Work",
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "rights": "All rights reserved. Designed and coded with passion."
+  },
+  "Trust": {
+    "experience": "Intern @ EAGODI",
+    "projects": "10+ Projects",
+    "availability": "Available for Work",
+    "fast": "Fast Delivery"
+  }
+}

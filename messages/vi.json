@@ -1,0 +1,127 @@
+{
+  "Metadata": {
+    "title": "Nguyễn Bá Hoài Nam | Lập trình viên Fullstack AI",
+    "description": "Hồ sơ năng lực chuyên nghiệp của Nguyễn Bá Hoài Nam, một lập trình viên Fullstack chuyên về các ứng dụng tích hợp AI."
+  },
+  "Navbar": {
+    "about": "Giới thiệu",
+    "skills": "Kỹ năng",
+    "experience": "Kinh nghiệm",
+    "projects": "Dự án",
+    "contact": "Liên hệ",
+    "hireMe": "TUYỂN DỤNG"
+  },
+  "Hero": {
+    "subtitle": "Xây dựng các ứng dụng tích hợp AI",
+    "greeting": "Tôi là",
+    "role": "Lập trình viên Fullstack AI",
+    "bio": "Sinh viên Kỹ thuật Phần mềm (Đại học Đông Á) với tư duy phát triển sản phẩm thực tế. Chuyên sâu về xây dựng ứng dụng Web hiệu suất cao và tích hợp giải pháp AI (LLMs) để tối ưu hóa trải nghiệm người dùng. Từng tham gia phát triển hệ thống quản lý giáo dục thực tế tại EAGODI, cam kết mang lại giá trị kỹ thuật và giải pháp thông minh.",
+    "viewProjects": "Xem Dự Án",
+    "downloadCv": "Tải CV"
+  },
+  "About": {
+    "title": "Tư duy",
+    "titleAccent": "Độc lập",
+    "description": "Tôi chuyên về việc thu hẹp khoảng cách giữa các mô hình AI tinh vi và hệ sinh thái web trực quan.",
+    "p1": "Hành trình của tôi với tư cách là một nhà phát triển được thúc đẩy bởi sự tò mò không ngừng về cách trí tuệ nhân tạo có thể thay đổi tiềm năng của con người. Tôi không chỉ xây dựng các trang web; tôi tạo ra các môi trường thông minh có thể học hỏi và thích nghi.",
+    "p2": "Hiện tại, tôi đang đi sâu vào các sắc thái kiến trúc của các Mô hình Ngôn ngữ Lớn (LLM) và sự tích hợp của chúng trong các framework React hiện đại. Mục tiêu của tôi là tạo ra các nền tảng như TOEIC AI—nơi công nghệ trở thành một đối tác liền mạch trong sự tiến bộ của người dùng."
+  },
+  "Stats": {
+    "projects": "Dự án hoàn thành",
+    "technologies": "Công nghệ thành thạo",
+    "learning": "Tiến độ học TOEIC AI"
+  },
+  "Skills": {
+    "title": "Kho vũ khí",
+    "titleAccent": "Kỹ thuật",
+    "description": "Phân tích chi tiết về chuyên môn của tôi trong toàn bộ stack và tích hợp AI.",
+    "languages": "Ngôn ngữ",
+    "frontend": "Giao diện (Frontend)",
+    "backend": "Hệ thống (Backend)",
+    "mobile": "Di động (Mobile)",
+    "database": "Cơ sở dữ liệu",
+    "devops": "DevOps / Công cụ",
+    "tools": "Công cụ & AI",
+    "ai": "AI / Khác"
+  },
+  "CV": {
+    "title": "Sơ yếu lý lịch",
+    "print": "Xuất PDF",
+    "back": "Quay lại Portfolio",
+    "summary": "Tóm tắt chuyên môn",
+    "contact": "Thông tin liên hệ",
+    "skills": "Kỹ năng chuyên môn",
+    "experience": "Kinh nghiệm làm việc",
+    "education": "Học vấn",
+    "projects": "Dự án tiêu biểu"
+  },
+  "Education": {
+    "items": [
+      {
+        "school": "Đại học Đông Á",
+        "degree": "Chuyên ngành Kỹ thuật Phần mềm (Level 3/4)",
+        "description": "Tập trung nghiên cứu Kiến trúc Phần mềm và Trí tuệ Nhân tạo. GPA chuyên ngành 3.1, tích cực tham gia các dự án Open Source và Workshop AI."
+      }
+    ]
+  },
+  "Experience": {
+    "title": "Hành trình",
+    "titleAccent": "Sự nghiệp",
+    "description": "Những cột mốc và vai trò đã định hình con đường lập trình của tôi.",
+    "items": [
+      {
+        "role": "Fullstack Developer (Intern)",
+        "company": "CÔNG TY CỔ PHẦN EAGODI",
+        "description": "Tối ưu hóa hiệu suất ứng dụng web giáo dục bằng cách tái cấu trúc logic Frontend với React.js/TypeScript, giảm 20% thời gian phản hồi giao diện. Triển khai hệ thống xác thực bảo mật JWT và RESTful API với Spring Boot, phục vụ đồng thời cho các ứng dụng trắc nghiệm và quản lý. Phối hợp thiết kế Database Schema (MongoDB/MySQL) linh hoạt, hỗ trợ mở rộng tính năng trắc nghiệm động."
+      },
+      {
+        "role": "Gia sư (Toán)",
+        "company": "Gia sư tự do",
+        "description": "Giảng dạy và hỗ trợ học tập cho học sinh khối 6-9. Phát triển kỹ năng truyền đạt kiến thức phức tạp một cách đơn giản, rèn luyện tính kiên nhẫn và khả năng quản lý thời gian."
+      }
+    ]
+  },
+  "Projects": {
+    "title": "Tác phẩm",
+    "titleAccent": "Tiêu biểu",
+    "description": "Trưng bày các nền tảng tích hợp AI và các ứng dụng web cao cấp.",
+    "items": [
+      {
+        "title": "Hệ thống Quản lý Giáo dục (EduProject)",
+        "description": "Nền tảng quản lý trường học toàn diện được xây dựng bằng Spring Boot và React, hỗ trợ quản lý khóa học và học sinh."
+      },
+      {
+        "title": "Website cá nhân chuyên nghiệp",
+        "description": "Trang web portfolio hiện đại sử dụng Next.js, Three.js và Framer Motion, thể hiện tư duy thiết kế và kỹ năng lập trình đỉnh cao."
+      }
+    ]
+  },
+  "WhatImBuilding": {
+    "active": "Đang hoạt động",
+    "title": "Tôi đang",
+    "titleAccent": "Xây dựng",
+    "description": "Tập trung năng lượng vào Nền tảng TOEIC AI. Một hệ sinh thái tận dụng Mô hình Ngôn ngữ Lớn để cung cấp dịch thuật thời gian thực, giải thích ngữ pháp và lộ trình học tập cá nhân hóa cho học sinh Việt Nam.",
+    "progress": "Tiến độ học tập thực tế",
+    "highlightTitle": "Điểm nổi bật của dự án",
+    "highlight1": "Tạo câu hỏi bằng AI",
+    "highlight2": "Giải thích thời gian thực bằng GPT-4",
+    "highlight3": "Lộ trình học tập năng động",
+    "highlight4": "Nhận dạng giọng nói để luyện nói"
+  },
+  "Contact": {
+    "title": "Hãy Cùng",
+    "titleAccent": "Hợp Tác",
+    "description": "Tôi xây dựng sản phẩm web nhanh, đẹp và tối ưu hiệu suất. Sẵn sàng hợp tác freelance hoặc full-time.",
+    "cta": "Tuyển Dụng / Hợp Tác Ngay",
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "rights": "Bản quyền thuộc về. Được thiết kế và lập trình bằng niềm đam mê."
+  },
+  "Trust": {
+    "experience": "2+ Năm Kinh Nghiệm",
+    "projects": "10+ Dự Án",
+    "availability": "Sẵn Sàng Làm Việc",
+    "fast": "Bàn Giao Nhanh"
+  }
+}
