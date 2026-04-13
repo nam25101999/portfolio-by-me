@@ -12,12 +12,22 @@
     "hireMe": "HIRE ME"
   },
   "Hero": {
-    "subtitle": "Building AI-powered applications",
-    "greeting": "I'm",
-    "role": "Fullstack AI Developer",
-    "bio": "Software Engineering Student (Dong A University) with a product-driven development mindset. Specializing in high-performance Web applications and AI integration (LLMs) to optimize user experience. Experienced in developing real-world educational management systems at EAGODI, committed to delivering technical value and intelligent solutions.",
-    "viewProjects": "View Projects",
-    "downloadCv": "Download CV"
+    "subtitle": "High-Performance Web Solutions & AI Integration",
+    "greeting": "Hi, I am",
+    "role": "Fullstack Developer | AI Integration",
+    "bio": "I build high-performance web applications and integrate AI to optimize user experiences. Focused on real-world value, speed, and scalability.",
+    "viewProjects": "Selected Projects",
+    "downloadCv": "Download Resume (PDF)",
+    "hireMe": "🚀 Hire Me Now",
+    "openToWork": "💼 Open to Work"
+  },
+  "Services": {
+    "title": "Services I",
+    "titleAccent": "Deliver",
+    "description": "Specialized services to help your business grow faster.",
+    "fullstack": "Fullstack Web Development",
+    "ai": "AI Integration (Gemini, OpenAI)",
+    "performance": "Performance & SEO Optimization"
   },
   "About": {
     "title": "Autonomous",
@@ -88,13 +98,25 @@
     "items": [
       {
         "title": "Educational Management System (EduProject)",
-        "description": "A comprehensive school management platform built with Spring Boot and React, supporting course and student management."
+        "description": "A comprehensive school management solution that digitizes educational workflows.",
+        "results": [
+          "Restructured system architecture, reducing page load times by 30%",
+          "Digitized 1,000+ automated quiz questions",
+          "Integrated AI for automated grading and result analysis"
+        ]
       },
       {
-        "title": "Professional Personal Portfolio",
-        "description": "A modern portfolio website using Next.js, Three.js, and Framer Motion, showcasing high-end design thinking and programming skills."
+        "title": "Neural Portfolio HUD",
+        "description": "A high-fidelity performance showcase with an AI-interactive HUD interface.",
+        "results": [
+          "Optimized 3D effects for smooth performance across all devices",
+          "Integrated Command Palette (Ctrl+K) for enhanced navigation",
+          "Achieved 95+ Performance score on Google Lighthouse"
+        ]
       }
-    ]
+    ],
+    "liveDemo": "Live Demo",
+    "sourceCode": "Source Code"
   },
   "WhatImBuilding": {
     "active": "Currently Active",
@@ -135,5 +157,17 @@
     "projects": "10+ Projects",
     "availability": "Available for Work",
     "fast": "Fast Delivery"
+  },
+  "CommandPalette": {
+    "placeholder": "Type a command or search...",
+    "empty": "No results found.",
+    "nav": "Navigation",
+    "social": "Socials",
+    "about": "About Me",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact",
+    "resume": "View Resume"
   }
 }

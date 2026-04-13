@@ -21,6 +21,8 @@ export const CommandPalette = () => {
   const [open, setOpen] = useState(false);
   const router = useRouter();
 
+  const t = useTranslations("CommandPalette");
+
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
       if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
@@ -62,7 +64,7 @@ export const CommandPalette = () => {
               <div className="flex items-center border-b border-white/5 px-4">
                 <Search className="mr-2 h-4 w-4 shrink-0 opacity-50" />
                 <Command.Input
-                  placeholder="Type a command or search..."
+                  placeholder={t("placeholder")}
                   className="flex h-14 w-full rounded-md bg-transparent py-3 text-sm outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50"
                   autoFocus
                 />
@@ -73,23 +75,23 @@ export const CommandPalette = () => {
               </div>
 
               <Command.List className="max-h-[350px] overflow-y-auto overflow-x-hidden p-2 no-scrollbar">
-                <Command.Empty className="py-6 text-center text-sm">No results found.</Command.Empty>
+                <Command.Empty className="py-6 text-center text-sm">{t("empty")}</Command.Empty>
                 
-                <Command.Group heading="Navigation" className="px-2 pb-2 text-[10px] font-bold uppercase tracking-wider text-muted/50">
-                  <Item icon={User} label="About Me" onSelect={() => runCommand(() => document.getElementById('about')?.scrollIntoView())} />
-                  <Item icon={Code} label="Skills" onSelect={() => runCommand(() => document.getElementById('skills')?.scrollIntoView())} />
-                  <Item icon={Briefcase} label="Experience" onSelect={() => runCommand(() => document.getElementById('experience')?.scrollIntoView())} />
-                  <Item icon={Folder} label="Projects" onSelect={() => runCommand(() => document.getElementById('projects')?.scrollIntoView())} />
-                  <Item icon={Mail} label="Contact" onSelect={() => runCommand(() => document.getElementById('contact')?.scrollIntoView())} />
+                <Command.Group heading={t("nav")} className="px-2 pb-2 text-[10px] font-bold uppercase tracking-wider text-muted/50">
+                  <Item icon={User} label={t("about")} onSelect={() => runCommand(() => document.getElementById('about')?.scrollIntoView())} />
+                  <Item icon={Code} label={t("skills")} onSelect={() => runCommand(() => document.getElementById('skills')?.scrollIntoView())} />
+                  <Item icon={Briefcase} label={t("experience")} onSelect={() => runCommand(() => document.getElementById('experience')?.scrollIntoView())} />
+                  <Item icon={Folder} label={t("projects")} onSelect={() => runCommand(() => document.getElementById('projects')?.scrollIntoView())} />
+                  <Item icon={Mail} label={t("contact")} onSelect={() => runCommand(() => document.getElementById('contact')?.scrollIntoView())} />
                 </Command.Group>
 
-                <Command.Group heading="Socials" className="mt-4 px-2 pb-2 text-[10px] font-bold uppercase tracking-wider text-muted/50">
+                <Command.Group heading={t("social")} className="mt-4 px-2 pb-2 text-[10px] font-bold uppercase tracking-wider text-muted/50">
                   <Item icon={Github} label="GitHub" onSelect={() => runCommand(() => window.open('https://github.com/nam25101999', '_blank'))} />
                   <Item icon={Linkedin} label="LinkedIn" onSelect={() => runCommand(() => window.open('https://linkedin.com/in/nguyen-ba-hoai-nam', '_blank'))} />
                 </Command.Group>
 
-                <Command.Group heading="Actions" className="mt-4 px-2 pb-2 text-[10px] font-bold uppercase tracking-wider text-muted/50">
-                   <Item icon={FileText} label="View Resume" onSelect={() => runCommand(() => router.push('/cv'))} />
+                <Command.Group heading={t("actions")} className="mt-4 px-2 pb-2 text-[10px] font-bold uppercase tracking-wider text-muted/50">
+                   <Item icon={FileText} label={t("resume")} onSelect={() => runCommand(() => router.push('/cv'))} />
                 </Command.Group>
               </Command.List>
             </Command>

@@ -1,7 +1,7 @@
 export const personalInfo = {
   name: "Nguyễn Bá Hoài Nam",
   role: "Fullstack Developer | AI Integration",
-  bio: "Sinh viên Kỹ thuật Phần mềm (Đại học Đông Á) với tư duy phát triển sản phẩm thực tế. Chuyên sâu về xây dựng ứng dụng Web hiệu suất cao và tích hợp giải pháp AI (LLMs) để tối ưu hóa trải nghiệm người dùng. Từng tham gia phát triển hệ thống quản lý giáo dục thực tế tại EAGODI, cam kết mang lại giá trị kỹ thuật và giải pháp thông minh.",
+  bio: "Tôi xây dựng các ứng dụng web hiệu suất cao và tích hợp AI giúp tối ưu trải nghiệm người dùng. Tập trung vào giá trị thực tế, tốc độ và khả năng mở rộng.",
   email: "nguyennam25101999@gmail.com",
   phone: "0355114961",
   zalo: "0869371612",
@@ -14,7 +14,8 @@ export const personalInfo = {
 export const stats = [
   { label: "Năm Kinh Nghiệm", value: 1, suffix: "+" },
   { label: "Dự Án Hoàn Thành", value: 10, suffix: "+" },
-  { label: "Sẵn Sàng Làm Việc", value: 100, suffix: "%" },
+  { label: "Intern @ EAGODI", value: 100, suffix: "%" },
+  { label: "AI Integration", value: 10, suffix: "+" },
 ];
 
 export const skillsGroups = [
@@ -102,7 +103,8 @@ export const projects = [
     demo: "https://edu-project-demo.vercel.app",
     tech: ["Java", "Spring Boot", "React", "PostgreSQL"],
     tag: "Fullstack System",
-    image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=800&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=800&auto=format&fit=crop",
+    results: ["Tái cấu trúc hệ thống giúp giảm 30% thời gian tải trang", "Số hóa 1000+ câu hỏi trắc nghiệm tự động", "Tích hợp AI hỗ trợ chấm điểm và phân tích kết quả"]
   },
   {
     slug: "portfolio-by-me",
@@ -110,7 +112,8 @@ export const projects = [
     demo: "https://hoainam.dev",
     tech: ["Next.js", "Tailwind CSS", "Three.js", "Framer Motion"],
     tag: "Senior UI/UX",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop",
+    results: ["Tối ưu hóa hiệu ứng 3D mượt mà trên mọi thiết bị", "Tích hợp Command Palette (Ctrl+K) tăng trải nghiệm điều hướng", "Đạt 95+ điểm Performance trên Google Lighthouse"]
   }
 ];
 

@@ -1,60 +1,38 @@
 "use client";
 
-import { motion, useInView, useSpring, useTransform } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 import { useTranslations } from "next-intl";
-
-const Counter = ({ value, suffix = "" }: { value: number, suffix?: string }) => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-50px" });
-  
-  const springValue = useSpring(0, {
-    stiffness: 40,
-    damping: 20,
-  });
-
-  useEffect(() => {
-    if (isInView) {
-      springValue.set(value);
-    }
-  }, [isInView, value, springValue]);
-
-  const displayValue = useTransform(springValue, (latest) => Math.floor(latest));
-
-  return (
-    <span ref={ref}>
-      <motion.span>{displayValue}</motion.span>
-      <span>{suffix}</span>
-    </span>
-  );
-};
+import { Rocket, Briefcase, CheckCircle2, Zap } from "lucide-react";
 
 export const StatsBar = () => {
-  const t = useTranslations("Stats");
+  const t = useTranslations("Trust");
 
-  const stats = [
-    { key: "projects", value: 5, suffix: "+" },
-    { key: "technologies", value: 12, suffix: "+" },
-    { key: "learning", value: 85, suffix: "%" },
+  const trustSignals = [
+    { key: "projects", icon: Rocket, color: "text-primary" },
+    { key: "experience", icon: Briefcase, color: "text-accent" },
+    { key: "availability", icon: CheckCircle2, color: "text-green-500" },
+    { key: "fast", icon: Zap, color: "text-yellow-500" }
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-10">
-      {stats.map((stat, index) => (
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 py-12">
+      {trustSignals.map((signal, index) => (
         <motion.div
           key={index}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: index * 0.1 }}
-          className="flex flex-col items-center justify-center space-y-2 p-6 glass rounded-2xl group hover:neon-glow transition-all duration-300"
+          className="flex flex-col items-center justify-center space-y-3 p-6 glass rounded-2xl group hover:border-primary/30 transition-all duration-500"
         >
-          <div className="text-4xl md:text-5xl font-outfit font-black text-gradient">
-            <Counter value={stat.value} suffix={stat.suffix} />
+          <div className={`p-3 rounded-xl bg-white/5 group-hover:bg-primary/10 transition-colors`}>
+            <signal.icon className={`w-6 h-6 ${signal.color}`} />
           </div>
-          <p className="text-slate-400 font-medium uppercase tracking-[0.2em] text-[10px] text-center">
-            {t(stat.key)}
+          <p className="text-[11px] md:text-xs font-black uppercase tracking-[0.1em] text-foreground text-center leading-tight">
+            {t(signal.key)}
           </p>
+          <div className="h-[1px] w-8 bg-white/10 group-hover:w-16 transition-all duration-500" />
         </motion.div>
       ))}
     </div>

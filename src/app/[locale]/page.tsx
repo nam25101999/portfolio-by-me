@@ -11,6 +11,7 @@ import { ContactModal } from "@/components/ui/contact-modal";
 
 // Dynamic imports for improved performance
 const AboutSection = dynamic(() => import("@/components/sections/sections").then(mod => mod.AboutSection));
+const ServicesSection = dynamic(() => import("@/components/sections/sections").then(mod => mod.ServicesSection));
 const SkillsSection = dynamic(() => import("@/components/sections/sections").then(mod => mod.SkillsSection));
 const WhatImBuilding = dynamic(() => import("@/components/sections/sections").then(mod => mod.WhatImBuilding));
 const ExperienceSection = dynamic(() => import("@/components/sections/sections").then(mod => mod.ExperienceSection));
@@ -27,7 +28,7 @@ export default function Home() {
       <Navbar onContactClick={() => setIsModalOpen(true)} />
       
       <div className="relative z-10 pt-10">
-        <Hero />
+        <Hero onContactClick={() => setIsModalOpen(true)} />
         
         <div className="max-w-7xl mx-auto px-6">
           <StatsBar />
@@ -35,6 +36,7 @@ export default function Home() {
 
         <div className="space-y-16 pb-24">
           <AboutSection />
+          <ServicesSection />
           <SkillsSection />
           <WhatImBuilding />
           <ExperienceSection />

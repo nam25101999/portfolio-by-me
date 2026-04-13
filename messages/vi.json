@@ -12,12 +12,22 @@
     "hireMe": "TUYỂN DỤNG"
   },
   "Hero": {
-    "subtitle": "Xây dựng các ứng dụng tích hợp AI",
-    "greeting": "Tôi là",
-    "role": "Lập trình viên Fullstack AI",
-    "bio": "Sinh viên Kỹ thuật Phần mềm (Đại học Đông Á) với tư duy phát triển sản phẩm thực tế. Chuyên sâu về xây dựng ứng dụng Web hiệu suất cao và tích hợp giải pháp AI (LLMs) để tối ưu hóa trải nghiệm người dùng. Từng tham gia phát triển hệ thống quản lý giáo dục thực tế tại EAGODI, cam kết mang lại giá trị kỹ thuật và giải pháp thông minh.",
-    "viewProjects": "Xem Dự Án",
-    "downloadCv": "Tải CV"
+    "subtitle": "Giải pháp Web hiệu suất cao & Tích hợp AI",
+    "greeting": "Chào bạn, tôi là",
+    "role": "Fullstack Developer | AI Integration",
+    "bio": "Tôi xây dựng các ứng dụng web hiệu suất cao và tích hợp AI giúp tối ưu trải nghiệm người dùng. Tập trung vào giá trị thực tế, tốc độ và khả năng mở rộng.",
+    "viewProjects": "Dự án tiêu biểu",
+    "downloadCv": "Tải hồ sơ (PDF)",
+    "hireMe": "🚀 Tuyển dụng ngay",
+    "openToWork": "💼 Sẵn sàng làm việc"
+  },
+  "Services": {
+    "title": "Giá trị tôi",
+    "titleAccent": "Mang lại",
+    "description": "Những dịch vụ chuyên môn giúp doanh nghiệp của bạn phát triển nhanh hơn.",
+    "fullstack": "Xây dựng Web App Fullstack",
+    "ai": "Tích hợp AI (Gemini, OpenAI)",
+    "performance": "Tối ưu hiệu suất & SEO"
   },
   "About": {
     "title": "Tư duy",
@@ -88,13 +98,25 @@
     "items": [
       {
         "title": "Hệ thống Quản lý Giáo dục (EduProject)",
-        "description": "Nền tảng quản lý trường học toàn diện được xây dựng bằng Spring Boot và React, hỗ trợ quản lý khóa học và học sinh."
+        "description": "Giải pháp quản lý trường học toàn diện giúp số hóa quy trình vận hành giáo dục.",
+        "results": [
+          "Tái cấu trúc hệ thống giúp giảm 30% thời gian tải trang",
+          "Số hóa 1000+ câu hỏi trắc nghiệm tự động",
+          "Tích hợp AI hỗ trợ chấm điểm và phân tích kết quả"
+        ]
       },
       {
-        "title": "Website cá nhân chuyên nghiệp",
-        "description": "Trang web portfolio hiện đại sử dụng Next.js, Three.js và Framer Motion, thể hiện tư duy thiết kế và kỹ năng lập trình đỉnh cao."
+        "title": "Neural Portfolio HUD",
+        "description": "Nền tảng trưng bày năng lực với giao diện HUD tương lai và tương tác AI.",
+        "results": [
+          "Tối ưu hóa hiệu ứng 3D mượt mà trên mọi thiết bị",
+          "Tích hợp Command Palette (Ctrl+K) tăng trải nghiệm điều hướng",
+          "Đạt 95+ điểm Performance trên Google Lighthouse"
+        ]
       }
-    ]
+    ],
+    "liveDemo": "Live Demo",
+    "sourceCode": "Mã nguồn"
   },
   "WhatImBuilding": {
     "active": "Đang hoạt động",
@@ -135,5 +157,17 @@
     "projects": "10+ Dự Án",
     "availability": "Sẵn Sàng Làm Việc",
     "fast": "Bàn Giao Nhanh"
+  },
+  "CommandPalette": {
+    "placeholder": "Nhấn câu lệnh hoặc tìm kiếm...",
+    "empty": "Không tìm thấy kết quả.",
+    "nav": "Điều hướng",
+    "social": "Mạng xã hội",
+    "about": "Giới thiệu",
+    "skills": "Kỹ năng",
+    "experience": "Kinh nghiệm",
+    "projects": "Dự án",
+    "contact": "Liên hệ",
+    "resume": "Xem CV"
   }
 }

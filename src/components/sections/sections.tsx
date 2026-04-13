@@ -72,7 +72,7 @@ const NeuralMatrixHUD = () => {
     >
       <motion.div 
         style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
-        className="aspect-video glass rounded-[2.5rem] overflow-hidden relative"
+        className="aspect-square md:aspect-video glass rounded-[2.5rem] overflow-hidden relative"
       >
         {/* Deep Space Background */}
         <div className="absolute inset-0 bg-[#020617] opacity-20" />
@@ -203,6 +203,66 @@ const NeuralMatrixHUD = () => {
   );
 };
 
+export const ServicesSection = () => {
+  const t = useTranslations("Services");
+  
+  const services = [
+    { 
+      icon: Layers, 
+      name: t("fullstack"), 
+      desc: "Architecting end-to-end web solutions with modern stacks like Next.js, Spring Boot, and PostgreSQL.",
+      color: "from-blue-500 to-cyan-500"
+    },
+    { 
+      icon: Brain, 
+      name: t("ai"), 
+      desc: "Enriching applications with intelligence using LLMs, Vector databases, and prompt engineering.",
+      color: "from-purple-500 to-pink-500"
+    },
+    { 
+      icon: Zap, 
+      name: t("performance"), 
+      desc: "Optimizing core web vitals, implementing caching strategies, and ensuring maximum SEO visibility.",
+      color: "from-yellow-500 to-orange-500"
+    }
+  ];
+
+  return (
+    <SectionLayout id="services">
+      <RevealItem className="text-center mb-16">
+        <h2 className="text-4xl md:text-5xl font-outfit font-black mb-4 text-foreground">
+          {t("title")} <span className="text-gradient">{t("titleAccent")}</span>
+        </h2>
+        <p className="text-muted max-w-2xl mx-auto">{t("description")}</p>
+      </RevealItem>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {services.map((service, i) => (
+          <RevealItem key={i} className="group">
+            <div className="h-full min-h-[320px] glass p-8 rounded-[2rem] border-white/5 hover:border-white/20 transition-all duration-500 relative overflow-hidden flex flex-col items-center text-center">
+              <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-[0.03] transition-opacity duration-500`} />
+              
+              <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${service.color} p-4 mb-6 shadow-xl shadow-black/20 group-hover:scale-110 transition-transform duration-500`}>
+                <service.icon className="w-full h-full text-white" />
+              </div>
+
+              <h3 className="text-xl font-outfit font-black text-foreground mb-4">{service.name}</h3>
+              <p className="text-sm text-muted/80 leading-relaxed">{service.desc}</p>
+              
+              <div className="mt-8 pt-8 border-t border-white/5 w-full flex justify-center">
+                <div className="flex items-center gap-1 text-[10px] font-black uppercase tracking-widest text-primary opacity-50 group-hover:opacity-100 transition-opacity">
+                   <span>Professional</span>
+                   <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
+                </div>
+              </div>
+            </div>
+          </RevealItem>
+        ))}
+      </div>
+    </SectionLayout>
+  );
+};
+
 export const SkillsSection = () => {
   const t = useTranslations("Skills");
 
@@ -260,6 +320,7 @@ export const ProjectsSection = () => {
     ...p,
     title: t(`items.${i}.title`),
     description: t(`items.${i}.description`),
+    results: t.raw(`items.${i}.results`)
   }));
 
   return (
